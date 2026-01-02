@@ -1,0 +1,3 @@
+PySide6
+phonenumberslite~=9.0.18
+pdfplumber~=0.11.8

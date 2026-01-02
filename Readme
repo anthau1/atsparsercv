@@ -1,0 +1,24 @@
+
+Readme cv-parser
+Tämä on koeluonteinen ats cv - parseri.  Se lukee pdf:n  ja parsii sitä cv:n, jonka voi lukea html
+muodossa
+
+Ajaminen on helppoa. Ensiksi pitää asentaa kirjastot
+
+tkinter
+json
+re
+phonenumbers
+pdfplumber
+
+python pip:llä
+tämän jälkeen ajetaan atscv.py tiedostossa oleva main-ohjelma ja ohjelma luo html-tiedoston annetusta cv:stä.
+
+Ohjelma on rakennettu englanninkieliselle cv:lle, mutta ymmärtää jonkin verran suomalaista cv:tä kin.
+
+Ohjelman koodauksessa on hyödynnetty chatgpt:tä.
+
+Antto Hautamäki
+
+
+

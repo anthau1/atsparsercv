@@ -1,0 +1,40 @@
+
+
+ul {
+  list-style-type: none;
+  padding-left: 0; /* optional: removes indent */
+}
+
+
+div {
+  border: 1px solid black;
+  margin : 20px;
+}
+
+.workplace  {
+
+  margin : 20px;
+}
+
+/*Workexperience */
+.work {
+    border: 0px solid black;
+    margin : 40px;
+}
+
+body  {
+  background-color: lightblue;
+}
+
+b {
+    margin-top: 10px;
+}
+.green {
+    color: green;
+    
+}
+
+.red {
+    color: red;
+
+}
