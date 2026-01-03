@@ -26,15 +26,34 @@ LINKEDIN_RE = re.compile(r'(https?://)?(www\.)?linkedin\.com/[A-Za-z0-9_\-/]+', 
 class ATSParserGUI(ATSParserGUIInterface):
     radio3 = None
     listbox = None
+    name=""
 
     def __init__(self, root):
+        def setname():
+            name = entry.get()
+            self.name = name
+
+
         self.root = root
+
         self.root.title("ATS Resume Parser")
         self.root.geometry("900x300")
+        label = tk.Label(root, text="Nimi:")
+        label.pack(pady=10)
+
+        # Tekstiruutu
+        entry = tk.Entry(root)
+        entry.pack(pady=5)
+
+        # Nappi
+        button = tk.Button(root, text="Aseta nimi", command=setname)
+        button.pack(pady=5)
         self.select_button = tk.Button(root, text="Select PDF", command=self.select_file)
         self.select_button.pack()
         self.select_button.pack()
         self.listbox = tk.Listbox(root)
+
+
 
     def select_file(self):
 
@@ -243,6 +262,7 @@ class ATSParserGUI(ATSParserGUIInterface):
     <div>
     <h2> Metadetails </h2>
     <p  class="{ "green"}"> Score {score}</p>
+    <p> Name={self.name}</p>
     </div>
 
     <div>
